@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>15 Puzzle Game Clone</title>
+    <!-- Not a good code practice! Always include external source file -->
+    <style>
+        body {
+            background:white;
+            overflow: hidden;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        #Board {
+            position: relative;
+            width: 325px;
+            height: 325px;
+            margin: 0 auto;
+            margin-top: 80px;
+            border: 4px solid #4e33e7;
+            border-radius: 4px;
+        }
+
+        #Board span {
+            position: absolute;
+            display: block;
+            width: 80px;
+            height: 80px;
+            border-radius: 4px;
+        }
+
+        #Board span.number {
+            cursor: pointer;
+            font: bold 36px/80px Arial;
+            text-align: center;
+            color: #4e33e7;
+        }
+
+        #Board span.empty {
+            background: transparent;
+        }
+
+        #Board span.number {
+            background:#bab4dd;
+        }
+    </style>
+</head>
+<body>
+    <div id="Board"></div>
+    <br />
+    <div id="Controls">
+        <button id="BtnScramble">Scramble</button>
+    </div>
+    <br />
+    <p>Basic clone of classic <a href="https://en.wikipedia.org/wiki/15_puzzle">15 puzzle</a></p>
+	<p><i>See Bobby Fischer solving the puzzle in less than 30 seconds...</i> <a href="https://youtu.be/DyewCdM12lI">video</a></p>
+
+    <script src="./15puzzle.js"></script>
+</body>
+</html>
